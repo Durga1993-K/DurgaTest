@@ -1,0 +1,22 @@
+ package java_program2;
+
+import java.util.Scanner;
+
+public class Factorial_Number {
+	
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enater the Number");
+		int num = sc.nextInt();
+		
+		int f =1;
+		for (num = 7 ; num<=7 ; num--)
+		{
+			f=f*num;
+		}
+		System.out.println("factoril");
+	}
+
+}

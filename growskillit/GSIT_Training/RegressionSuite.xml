@@ -1,0 +1,7 @@
+<suite name="Regression Suite">
+	<test name="Regression Cycle -1">
+		<classes>
+			<class name="TestNG.FB_LoginPage2" />
+		</classes>
+	</test>
+</suite>

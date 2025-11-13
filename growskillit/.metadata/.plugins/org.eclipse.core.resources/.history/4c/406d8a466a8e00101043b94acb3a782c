@@ -1,0 +1,47 @@
+package seleniumwebdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class HandlingDropdown {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:/Users/user/Desktop/jars/chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.facebook.com/reg/");
+		
+		driver.manage().window().maximize();
+		
+		Thread.sleep(2000);
+		
+		WebElement day = driver.findElement(By.id("day"));
+		
+		WebElement month = driver.findElement(By.id("month"));
+		
+		WebElement Year = driver.findElement(By.id("year"));
+		
+		Select S = new Select(day);
+		
+		S.selectByValue("22");
+		
+		Select S1 = new Select(month);
+		
+		S1.selectByIndex(4);
+		
+		Select S2 = new Select(Year);
+		
+		S2.selectByValue("2022");
+		
+		driver.close();
+		
+		
+
+	}
+
+}

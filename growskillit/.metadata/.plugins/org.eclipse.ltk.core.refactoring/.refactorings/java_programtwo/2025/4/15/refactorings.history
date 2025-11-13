@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Varibles.java&apos; to &apos;GSIT_Training/src/java_program2&apos;&#x0D;&#x0A;- Original project: &apos;java_programtwo&apos;&#x0D;&#x0A;- Destination element: &apos;GSIT_Training/src/java_program2&apos;&#x0D;&#x0A;- Original element: &apos;java_programtwo.Varibles.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=GSIT_Training/src&lt;java_program2" element1="/src&lt;java_programtwo{Varibles.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1744529305356" units="1" version="1.0"/>
+</session>

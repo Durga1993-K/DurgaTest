@@ -1,0 +1,48 @@
+package seleniumwebdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class RelativeXapth {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+	
+		System.setProperty("webdriver.chrome.driver", "C:/Users/user/Desktop/jars/chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.facebook.com/");
+		
+		driver.manage().window().maximize();
+		
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//input[@name ='email'])")).sendKeys("manasqa@gmail.com");
+		
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//input[@name ='passcode1'])")).sendKeys("Manas@123");
+		
+		
+		driver.findElement(By.xpath("//button[@id='signIn']")).click();
+		
+		Thread.sleep(1000);
+		
+		driver.close();
+		
+		
+//		username =//input[@name ='onlineId1']
+//		password =//input[@name ='passcode1']
+//		savein = //input[@type='checkbox']
+//		signin = //button[@id='signIn']
+//		link = //*[@id ='forgot-oid-pwd']
+//		Security & Help = //*[@id ='security']
+//		Find your closest financial center or ATM=  //*[text()='Find your closest financial center or ATM']
+//		Schedule an Appointment=	//*[text()='Schedule an Appointment']
+//		Bank of America Logo=		//*[@alt = 'Bank of America Logo']
+//				//*[@alt='Facebook']
+	}
+
+}
